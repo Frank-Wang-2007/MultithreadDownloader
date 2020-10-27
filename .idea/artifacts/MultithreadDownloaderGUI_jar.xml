@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="MultithreadDownloaderGUI:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MultithreadDownloaderGUI_jar</output-path>
+    <root id="archive" name="MultithreadDownloaderGUI.jar">
+      <element id="module-output" name="MultithreadDownloaderGUI" />
+    </root>
+  </artifact>
+</component>
