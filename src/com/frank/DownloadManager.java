@@ -66,7 +66,6 @@ public class DownloadManager implements Runnable {
 		}
 		long t2 = System.currentTimeMillis();
 		PrintLog("[INFO]:Download Time Consuming：" + (t2 -t1)/1000 + " S");
-		main.logger.Info("Download Time Consuming：" + (t2 -t1)/1000 + " S");
 	}
 
 	public void startDownload() {
@@ -83,7 +82,6 @@ public class DownloadManager implements Runnable {
 
 	public long getFileLength() {
 		PrintLog("[INFO]:Getting File Size...");
-		main.logger.Info("Getting File Size...");
 		HttpURLConnection conn = null;
 		long result = 0;
 		try {
@@ -99,7 +97,6 @@ public class DownloadManager implements Runnable {
 			}
 		}
 		PrintLog("[INFO]:Get The File Size Is " + result);
-		main.logger.Info("Get The File Size Is " + result);
 		return result;
 	}
 
@@ -125,7 +122,6 @@ public class DownloadManager implements Runnable {
 	// 合并文件
 	public void mergeFiles() {
 		PrintLog("[INFO]:Merge Files...");
-		main.logger.Info("Merge Files...");
 		OutputStream out = null;
 		try {
 			out = new FileOutputStream(savePath);
@@ -154,7 +150,6 @@ public class DownloadManager implements Runnable {
 			}
 		}
 		PrintLog("[INFO]:Merge Files Succeeded");
-		main.logger.Info("Merge Files Succeeded");
 	}
 
 	public String getSavePath() {
