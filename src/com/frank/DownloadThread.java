@@ -29,6 +29,7 @@ public class DownloadThread implements Runnable {
 		OutputStream out = null;
 		try {
 			PrintLog("[INFO]:InitThread：" + whichThread);
+			main.logger.Info("InitThread：" + whichThread);
 			URL fileUrl = new URL(url);
 			conn = (HttpURLConnection) fileUrl.openConnection();// 与服务器创建连接
 			conn.setRequestMethod("GET");// 下载使用get请求

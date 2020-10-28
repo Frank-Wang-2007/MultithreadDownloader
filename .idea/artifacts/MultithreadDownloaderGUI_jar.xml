@@ -3,6 +3,8 @@
     <output-path>$PROJECT_DIR$/out/artifacts/MultithreadDownloaderGUI_jar</output-path>
     <root id="archive" name="MultithreadDownloaderGUI.jar">
       <element id="module-output" name="MultithreadDownloaderGUI" />
+      <element id="file-copy" path="$PROJECT_DIR$/lib/commons-lang3-3.11.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/lib/BedrockLog.jar" />
     </root>
   </artifact>
 </component>
